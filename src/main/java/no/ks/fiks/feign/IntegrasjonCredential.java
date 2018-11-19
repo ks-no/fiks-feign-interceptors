@@ -8,8 +8,8 @@ import java.util.UUID;
 
 @Slf4j
 public class IntegrasjonCredential implements RequestInterceptor {
-    private static final String INTEGRASJON_ID = "";
-    private static final String INTEGRASJON_PASSORD = "";
+    private static final String INTEGRASJON_ID = "IntegrasjonId";
+    private static final String INTEGRASJON_PASSORD = "IntegrasjonPassord";
     private final UUID integrasjonId;
     private final String integrasjonPassord;
 

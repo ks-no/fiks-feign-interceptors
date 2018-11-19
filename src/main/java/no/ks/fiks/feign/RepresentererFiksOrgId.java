@@ -8,17 +8,17 @@ import java.util.UUID;
 
 @Slf4j
 public class RepresentererFiksOrgId implements RequestInterceptor {
-    private static final String INTEGRASJON_ID = "";
+    private static final String FIKS_ORG_ID = "FiksOrgId";
 
-    private final UUID integrasjonId;
+    private final UUID fiksOrgId;
 
-    public RepresentererFiksOrgId(UUID integrasjonId) {
-        this.integrasjonId = integrasjonId;
+    public RepresentererFiksOrgId(UUID fiksOrgId) {
+        this.fiksOrgId = fiksOrgId;
     }
 
     @Override
     public void apply(RequestTemplate template) {
-        addHeader(template, INTEGRASJON_ID, integrasjonId.toString());
+        addHeader(template, FIKS_ORG_ID, fiksOrgId.toString());
     }
 
     private void addHeader(RequestTemplate template, String header, String value) {
