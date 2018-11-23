@@ -42,6 +42,7 @@
         <dependency>
             <groupId>no.ks.fiks</groupId>
             <artifactId>fiks-maskinporten-client</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
