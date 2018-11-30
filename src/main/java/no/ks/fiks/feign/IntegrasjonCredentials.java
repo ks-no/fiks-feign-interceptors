@@ -7,13 +7,13 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.UUID;
 
 @Slf4j
-public class IntegrasjonCredential implements RequestInterceptor {
+public class IntegrasjonCredentials implements RequestInterceptor {
     private static final String INTEGRASJON_ID = "IntegrasjonId";
     private static final String INTEGRASJON_PASSORD = "IntegrasjonPassord";
     private final UUID integrasjonId;
     private final String integrasjonPassord;
 
-    public IntegrasjonCredential(UUID integrasjonId, String integrasjonPassord) {
+    public IntegrasjonCredentials(UUID integrasjonId, String integrasjonPassord) {
         this.integrasjonId = integrasjonId;
         this.integrasjonPassord = integrasjonPassord;
     }

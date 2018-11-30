@@ -6,14 +6,14 @@ import lombok.extern.slf4j.Slf4j;
 import no.ks.fiks.maskinporten.Maskinportenklient;
 
 @Slf4j
-public class AutoriseresViaMaskinporten implements RequestInterceptor {
+public class MaskinportenCredentials implements RequestInterceptor {
     private static final String AUTHORIZATION_HEADER = "Authorization";
     private static final String BEARER_TOKEN_TYPE = "Bearer";
 
     private final Maskinportenklient maskinportenklient;
     private final String[] scopes;
 
-    public AutoriseresViaMaskinporten(Maskinportenklient maskinportenklient, String... scopes) {
+    public MaskinportenCredentials(Maskinportenklient maskinportenklient, String... scopes) {
         this.maskinportenklient = maskinportenklient;
         this.scopes = scopes;
     }
