@@ -19,7 +19,7 @@
     <url>https://github.com/ks-no/fiks-feign-interceptors</url>
   </scm>
   <properties>
-    <maskinporten-client.version>1.0.5</maskinporten-client.version>
+    <maskinporten-client.version>1.0.6</maskinporten-client.version>
     <lombok.version>1.18.4</lombok.version>
     <expiringmap.version>0.5.8</expiringmap.version>
     <oauth2-oidc-sdk.version>6.1.1</oauth2-oidc-sdk.version>
