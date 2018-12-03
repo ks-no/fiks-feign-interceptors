@@ -1,7 +1,7 @@
 # fiks-feign-interceptors
 ```
-RequestInterceptors.settIntegrasjon(UUID integrasjonId, String integrasjonPassord) {
-RequestInterceptors.settAccessToken(Maskinportenklient maskinportenklient, String... scopes) {
+RequestInterceptors.integrasjon(UUID integrasjonId, String integrasjonPassord) {
+RequestInterceptors.accessToken(Maskinportenklient maskinportenklient, String... scopes) {
 ```
 
 # Maven
@@ -17,8 +17,8 @@ RequestInterceptors.settAccessToken(Maskinportenklient maskinportenklient, Strin
 ```
 public <FeignApi> getFeignApi(UUID FiksOrgId, UUID integrasjonId, String integrasjonPassord, Maskinportenklient maskinportenklient, String... scopes) {
 	return Feign.build()	
-        .interceptor(RequestInterceptors.settIntegrasjon(integrasjonId, integrasjonPassord))
-        .interceptor(RequestInterceptors.settAccessToken(maskinportenklient, "ks"))
+        .interceptor(RequestInterceptors.integrasjon(integrasjonId, integrasjonPassord))
+        .interceptor(RequestInterceptors.accessToken(maskinportenklient, "ks"))
 	.build();
 }
 ```
