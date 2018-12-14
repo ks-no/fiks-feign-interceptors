@@ -1,8 +1,4 @@
 # fiks-feign-interceptors
-```
-RequestInterceptors.integrasjon(UUID integrasjonId, String integrasjonPassord) {
-RequestInterceptors.accessToken(Maskinportenklient maskinportenklient, String... scopes) {
-```
 
 # Maven
 ```
