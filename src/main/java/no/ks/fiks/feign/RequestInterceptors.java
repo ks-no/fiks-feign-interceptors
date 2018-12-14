@@ -1,8 +1,9 @@
 package no.ks.fiks.feign;
 
 import feign.RequestInterceptor;
-import no.ks.fiks.maskinporten.Maskinportenklient;
+
 import java.util.UUID;
+import java.util.function.Supplier;
 
 public final class RequestInterceptors{
 	private RequestInterceptors(){}
@@ -11,7 +12,7 @@ public final class RequestInterceptors{
                 return new IntegrasjonCredentials(integrasjonId, integrasjonPassord);
         }
 
-        public static RequestInterceptor accessToken(Maskinportenklient maskinportenklient, String... scopes) {
-                return new MaskinportenCredentials(maskinportenklient, scopes);
+        public static RequestInterceptor accessToken(Supplier<String> accessTokenSupplier) {
+                return new AccessTokenInterceptor(accessTokenSupplier);
         }
 }

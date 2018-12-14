@@ -42,11 +42,6 @@
         <version>10.0.1</version>
       </dependency>
       <dependency>
-        <groupId>no.ks.fiks</groupId>
-        <artifactId>maskinporten-client</artifactId>
-        <version>${maskinporten-client.version}</version>
-      </dependency>
-      <dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
         <version>${lombok.version}</version>
