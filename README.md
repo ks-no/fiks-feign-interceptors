@@ -15,7 +15,7 @@ RequestInterceptors.accessToken(Maskinportenklient maskinportenklient, String...
 
 # Eksempel
 ```
-public <FeignApi> getFeignApi(UUID FiksOrgId, UUID integrasjonId, String integrasjonPassord, Maskinportenklient maskinportenklient, String... scopes) {
+public <FeignApi> getFeignApi(UUID FiksOrgId, UUID integrasjonId, String integrasjonPassord, SomeOauthClient oauthKlient) {
 	return Feign.build()	
         .interceptor(RequestInterceptors.integrasjon(integrasjonId, integrasjonPassord))
         .interceptor(RequestInterceptors.accessToken(() -> oauthKlient.getAccessToken())
