@@ -27,6 +27,9 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <lombok.version>1.18.4</lombok.version>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <junit-jupiter.version>5.4.2</junit-jupiter.version>
+    <hamcrest.version>2.1</hamcrest.version>
+    <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -45,6 +48,16 @@
         <artifactId>lombok</artifactId>
         <version>${lombok.version}</version>
       </dependency>
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter</artifactId>
+        <version>${junit-jupiter.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hamcrest</groupId>
+        <artifactId>hamcrest</artifactId>
+        <version>${hamcrest.version}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
   <dependencies>
@@ -60,5 +73,24 @@
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest</artifactId>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>${maven-surefire-plugin.version}</version>
+      </plugin>
+    </plugins>
+  </build>
 </project>
