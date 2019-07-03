@@ -26,6 +26,7 @@ public class IntegrasjonCredentials implements RequestInterceptor {
 
     private void addHeader(RequestTemplate template, String header, String value) {
         log.debug("Constructing Header {}", header);
+        template.header(header, (Iterable<String>) null); // Clear any existing headers
         template.header(header, value);
     }
 }
