@@ -25,11 +25,7 @@ public class IntegrasjonCredentials implements RequestInterceptor {
     }
 
     private void addHeader(RequestTemplate template, String header, String value) {
-        if (template.headers().containsKey(header)) {
-            log.debug("Header, {}, was already set", header);
-        } else {
-            log.debug("Constructing Header {}", header);
-            template.header(header, value);
-        }
+        log.debug("Constructing Header {}", header);
+        template.header(header, value);
     }
 }
