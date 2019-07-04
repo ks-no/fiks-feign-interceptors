@@ -19,17 +19,17 @@
     <url>https://github.com/ks-no/fiks-feign-interceptors</url>
   </scm>
   <properties>
-    <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
-    <revision>1.0.4</revision>
-    <changelist>-SNAPSHOT</changelist>
-    <expiringmap.version>0.5.8</expiringmap.version>
-    <oauth2-oidc-sdk.version>6.1.1</oauth2-oidc-sdk.version>
-    <maven.compiler.source>1.8</maven.compiler.source>
     <lombok.version>1.18.4</lombok.version>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <junit-jupiter.version>5.4.2</junit-jupiter.version>
+    <expiringmap.version>0.5.8</expiringmap.version>
     <hamcrest.version>2.1</hamcrest.version>
+    <oauth2-oidc-sdk.version>6.1.1</oauth2-oidc-sdk.version>
+    <changelist>-SNAPSHOT</changelist>
     <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <revision>1.0.5</revision>
+    <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <junit-jupiter.version>5.4.2</junit-jupiter.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -87,7 +87,6 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>${maven-surefire-plugin.version}</version>
       </plugin>
