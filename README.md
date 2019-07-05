@@ -5,7 +5,7 @@
 <dependency>
   <groupId>no.ks.fiks</groupId>
   <artifactId>feign-interceptors</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.4</version>
 </dependency>
 ```
 
