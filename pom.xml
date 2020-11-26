@@ -21,7 +21,7 @@
   <properties>
     <lombok.version>1.18.4</lombok.version>
     <expiringmap.version>0.5.8</expiringmap.version>
-    <hamcrest.version>2.1</hamcrest.version>
+    <hamcrest.version>2.2</hamcrest.version>
     <oauth2-oidc-sdk.version>6.1.1</oauth2-oidc-sdk.version>
     <changelist>-SNAPSHOT</changelist>
     <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
