@@ -20,16 +20,16 @@
   </scm>
   <properties>
     <lombok.version>1.18.16</lombok.version>
-    <expiringmap.version>0.5.8</expiringmap.version>
-    <hamcrest.version>2.2</hamcrest.version>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <junit-jupiter.version>5.7.0</junit-jupiter.version>
+    <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
     <oauth2-oidc-sdk.version>6.1.1</oauth2-oidc-sdk.version>
     <changelist>-SNAPSHOT</changelist>
-    <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <revision>1.0.5</revision>
-    <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
     <maven.compiler.source>1.8</maven.compiler.source>
-    <junit-jupiter.version>5.7.0</junit-jupiter.version>
+    <expiringmap.version>0.5.8</expiringmap.version>
+    <hamcrest.version>2.2</hamcrest.version>
+    <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
+    <revision>1.0.6</revision>
   </properties>
   <dependencyManagement>
     <dependencies>
