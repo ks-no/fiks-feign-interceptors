@@ -1,11 +1,15 @@
 # fiks-feign-interceptors
+![GitHub License](https://img.shields.io/github/license/ks-no/fiks-feign-interceptors)
+[![Maven Central](https://img.shields.io/maven-central/v/no.ks.fiks/feign-interceptors)](https://search.maven.org/artifact/no.ks.fiks/feign-interceptors)
+![GitHub Release Date](https://img.shields.io/github/release-date/ks-no/fiks-feign-interceptors.svg)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/ks-no/fiks-feign-interceptors.svg)
 
 # Maven
 ```
 <dependency>
   <groupId>no.ks.fiks</groupId>
   <artifactId>feign-interceptors</artifactId>
-  <version>1.0.4</version>
+  <version>x.x.x</version>
 </dependency>
 ```
 
