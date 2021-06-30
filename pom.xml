@@ -19,7 +19,7 @@
     <url>https://github.com/ks-no/fiks-feign-interceptors</url>
   </scm>
   <properties>
-    <lombok.version>1.18.18</lombok.version>
+    <lombok.version>1.18.20</lombok.version>
     <maven.compiler.target>1.8</maven.compiler.target>
     <junit-jupiter.version>5.7.2</junit-jupiter.version>
     <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
