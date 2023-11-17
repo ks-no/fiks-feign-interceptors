@@ -29,7 +29,7 @@
     <hamcrest.version>2.2</hamcrest.version>
     <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
     <feign.version>13.1</feign.version>
-    <slf4j.version>2.0.7</slf4j.version>
+    <slf4j.version>2.0.9</slf4j.version>
   </properties>
   <dependencyManagement>
     <dependencies>
