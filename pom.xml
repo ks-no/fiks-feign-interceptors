@@ -9,7 +9,7 @@
   </parent>
   <groupId>no.ks.fiks</groupId>
   <artifactId>feign-interceptors</artifactId>
-  <version>1.2.1-SNAPSHOT</version>
+  <version>1.2.1</version>
   <name>${project.artifactId}</name>
   <description>${project.artifactId}</description>
   <url>https://github.com/ks-no/fiks-feign-interceptors</url>
