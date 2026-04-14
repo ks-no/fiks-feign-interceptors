@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: fiks-feign-interceptors
+  title: Fiks feign-interceptors
+  description: >
+    Interceptor-bibliotek for Feign HTTP-klient med støtte for integrasjon og OAuth-autentisering.
+  annotations:
+    github.com/project-slug: ks-no/fiks-feign-interceptors
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - kotlin
+    - java
+    - spring-boot
+    - feign
+    - oauth
+spec:
+  type: library
+  owner: group:team-tilgang
+  lifecycle: production
